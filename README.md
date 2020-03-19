@@ -1,1 +1,1 @@
-# jar-decompile
+# automatic batch decompile jar
