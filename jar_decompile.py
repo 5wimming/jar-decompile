@@ -1,5 +1,5 @@
 #python3
-#aotoman
+#5wimming
 #20200318
 import os
 import zipfile
@@ -10,7 +10,7 @@ def decompile(filepath,toolpath):
     for root,dirs,files in os.walk(filepath):
         print('[+] '+root)
         for filename in files:
-            if '.jar' in filename and '.md5' not in filename:
+            if '.jar' in filename or '.class' in filename and '.md5' not in filename:
                 if not os.path.exists(root+'_src'):#自动在jar包同级目录下创建以_src结尾的文件夹，用以存放反编译后的jar包和解压包
                     os.makedirs(root+'_src')
                 try:
